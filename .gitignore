@@ -1,0 +1,8 @@
+/.pytest_cache
+/include
+/Lib
+/Scripts
+/__pycache__/
+/.mypy_cache
+pyvenv.cfg
+/src/ez_route/__pycache__
