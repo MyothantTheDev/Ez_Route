@@ -6,3 +6,6 @@
 /.mypy_cache
 pyvenv.cfg
 /src/ez_route/__pycache__
+/src/ez_route/*/__pycache__
+/test/__pycache__
+/src/.pytest_cache
