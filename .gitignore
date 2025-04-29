@@ -9,3 +9,6 @@ pyvenv.cfg
 /src/ez_route/*/__pycache__
 /test/__pycache__
 /src/.pytest_cache
+/src/ez_route.egg-info
+/build
+/dist
