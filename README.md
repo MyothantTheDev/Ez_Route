@@ -32,7 +32,7 @@ pip install ez_route
 ```python
 import  sys
 from  PySide6.QtWidgets  import  QApplication, QMainWindow, QVBoxLayout, QPushButton, QLabel, QWidget
-from  src.ez_route  import  Router, QtRoute, ServiceLocator
+from  ez_route  import  Router, QtRoute, ServiceLocator
 
   
 
@@ -106,7 +106,7 @@ if  __name__  ==  "__main__":
 #### Tkinter Usage
 ```python
 import  tkinter  as  tk
-from  src.ez_route  import  Router, TkRoute, ServiceLocator
+from  ez_route  import  Router, TkRoute, ServiceLocator
 
 class  ProfileDetailPage(tk.Frame):
 	def  __init__(self, main_frame):
