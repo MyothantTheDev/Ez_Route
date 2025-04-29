@@ -8,7 +8,6 @@ class Router:
     self.main_frame = main_frame
     self.route_map = RouteMap()
     self.manager = RouteManager(self.route_map)
-    self.history = []
 
   def install_route(self, route: Route):
     """
@@ -42,25 +41,3 @@ class Router:
     """
     route, params = self.manager.get_route_by_path(path)
     route.display(self.main_frame, **params)
-  
-  def get_history(self) -> list[Route]:
-    """
-    Get the history of routes.
-    """
-    return self.history
-  
-  def clear_history(self):
-    """
-    Clear the history of routes.
-    """
-    self.history.clear()
-
-  def go_back(self):
-    """
-    Go back to the previous route.
-    """
-    if len(self.history) > 1:
-      self.history.pop()
-      return self.history[-1]
-    
-    return None
