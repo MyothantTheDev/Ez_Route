@@ -117,7 +117,8 @@ class  ProfileDetailPage(tk.Frame):
 		btn  =  tk.Button(self, text="Go to Home Page",
 		command=  lambda: self.router.go_by_path("/home"))
 		btn.pack(pady=10)
-		def  with_param(self, **params):
+		
+	def  with_param(self, **params):
 		self.label  =  tk.Label(self, text=f"Profile Page - Params {params.get('id')}", font=("Arial", 16))
 		self.label.pack(pady=10)
 
