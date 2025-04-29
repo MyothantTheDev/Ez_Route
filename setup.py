@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name="ez-route",
-    version="0.1.0",
+    version="0.1.1",
     description="A lightweight routing system for GUI applications (PyQt, Tkinter, etc.)",
     author="Myo Thant",
     author_email="myothant.thedev@gmail.com",
