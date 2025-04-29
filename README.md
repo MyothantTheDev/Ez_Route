@@ -22,7 +22,7 @@
 
 ### Install
 ```bash
-pip install ez_route
+pip install ez-route
 ```
 ---
 
