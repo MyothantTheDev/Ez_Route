@@ -2,13 +2,14 @@ from ..core import BaseNode, Expression, Literal, Variable
 from ..core import SegmentUtils
 from ..platform import QtScreenFactory, TkScreenFactory
 from PySide6.QtWidgets import QMainWindow
-from tkinter.ttk import Frame
+from tkinter import Frame
+from PySide6.QtWidgets import QWidget
     
 class RouteNode(BaseNode):
   def __init__(self, path, screen, name):
     super().__init__(path, screen, name)
     self.path = path
-    self.screen = screen
+    self.screen: Frame | QWidget = screen
     self.name = name
     self.pattern: list[Expression] = None
 
@@ -106,7 +107,7 @@ class TkRoute(Route):
       self.factory.set_mainFrame(main_frame)
 
     if not isinstance(main_frame, Frame):
-      raise TypeError("TkRoute's main_frame must be ttk.Frame.")
+      raise TypeError("TkRoute's main_frame must be tk.Frame.")
     
     # for child in main_frame.winfo_children():
     #   child.destroy()
